@@ -1,3 +1,4 @@
+import datetime
 from config import get_database
 
 COLLECTION_NAME = 'players'
@@ -28,7 +29,9 @@ def create(name, team, position, height, weight, is_active):
         'position': position,
         'height': int(height),
         'weight': int(weight),
-        'is_active': is_active
+        'is_active': is_active,
+        'date_added': datetime.datetime.now(),
+        'last_updated': datetime.datetime.now()
     })
 
 def update(name, team, position, height, weight, is_active):
@@ -46,7 +49,8 @@ def update(name, team, position, height, weight, is_active):
         'position': position,
         'height': int(height),
         'weight': int(weight),
-        'is_active': is_active
+        'is_active': is_active,
+        'last_updated': datetime.datetime.now()
     }}
     players.update_one(query, new_values)
 

@@ -13,7 +13,7 @@ def list_players():
     players = crud.list_all()
     
     print('List of players:')
-    for (player) in players:
+    for player in players:
         print(player)
 
 def create_player():
