@@ -62,7 +62,7 @@ def update_player():
             continue
         
         team = input('Team (3 char abbreviation): ')
-        if team == '' or len(team) > 3:
+        if team == '' or len(team) != 3:
             print('Input invalid.\n')
             continue
         

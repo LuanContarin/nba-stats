@@ -1,4 +1,4 @@
-from interface import players, teams
+from interface import players, teams, awards
 
 def menu():
     print('|-- NBA DATABASE MANAGER --|')
@@ -20,6 +20,8 @@ def main():
                 players.manage_players()
             case '2':
                 teams.manage_teams()
+            case '4':
+                awards.manage_awards()
             case _:
                 print('Invalid option.\n')
 

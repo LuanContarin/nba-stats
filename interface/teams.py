@@ -6,8 +6,8 @@ import crud.teams as crud
 CONFERENCES = { '1': 'West', '2': 'East' }
 
 def get_team_by_abbr():
-    name = input('Type the team ID (3 char abbreviation): ')
-    team = crud.get_by_abbr(name)
+    abbr = input('Type the team ID (3 char abbreviation): ')
+    team = crud.get_by_abbr(abbr)
 
     print('Team found: ', team)
 
