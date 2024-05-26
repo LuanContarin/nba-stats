@@ -1,5 +1,5 @@
 # nba-stats
-A program made using MongoDB and Python to store data about NBA player's stats.
+A program made using MongoDB and Python to store data about NBA games and player's.
 
 # Dependencies
 pymongo (https://pypi.org/project/pymongo/).
