@@ -6,5 +6,5 @@ pymongo (https://pypi.org/project/pymongo/).
 
 # Setup
 Make sure you have MongoDB database installed locally (you can change the connection config at `config.py`).<br>
-Run the command `pip install pymongo`.
+Run the command `pip install pymongo`.<br>
 Run the command `py app.py`.
